@@ -4,10 +4,10 @@
     ["index.html", "🦉", "貓頭鷹是誰"],
     ["taiwan-owls.html", "🌳", "台灣貓頭鷹"],
     ["where.html", "🔦", "去哪裡看"],
-    ["worksheet.html", "✏️", "學習單"],
     ["nocturnal.html", "🌙", "晚上的動物"],
     ["birds.html", "🐦", "台灣的鳥"],
-    ["pets.html", "🏠", "可以養嗎"]
+    ["pets.html", "🏠", "可以養嗎"],
+    ["worksheet.html", "✏️", "學習單"]
   ];
   var here = document.body.getAttribute("data-page") || "index.html";
 
