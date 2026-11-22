@@ -1,4 +1,4 @@
-// 貓頭鷹小學堂 shared script: banner + icon tabs, footer, 嗚嗚博士 mascot, photos with credits, quiz.
+// 夜貓子探險隊 shared script: banner + icon tabs, footer, 嗚嗚博士 mascot, photos with credits, quiz.
 (function () {
   var PAGES = [
     ["index.html", "🦉", "貓頭鷹是誰"],
@@ -34,7 +34,7 @@
   head.innerHTML =
     '<div class="banner"><svg class="stars" aria-hidden="true" width="100%" height="100%">' + stars +
     '</svg><svg class="moon" viewBox="0 0 40 40" aria-hidden="true"><path d="M26 3 A17 17 0 1 0 37 29 A14 14 0 1 1 26 3 Z" fill="#ffd560"/></svg>' +
-    '<div class="banner-in"><a class="logo" href="index.html">' + owlSVG("") + '貓頭鷹小學堂</a></div>' +
+    '<div class="banner-in"><a class="logo" href="index.html">' + owlSVG("") + '夜貓子探險隊</a></div>' +
     '<svg class="hills" viewBox="0 0 1200 46" preserveAspectRatio="none" aria-hidden="true"><path d="M0 46 L0 26 Q150 2 300 22 T600 20 T900 18 T1200 24 L1200 46 Z"/></svg></div>';
   var nav = document.createElement("nav");
   nav.className = "tabs";
@@ -51,7 +51,7 @@
 
   var foot = document.createElement("footer");
   foot.className = "foot";
-  foot.innerHTML = '<p>貓頭鷹小學堂．給國小低年級小朋友和爸爸媽媽．內容整理於 2026 年 11 月</p>' +
+  foot.innerHTML = '<p>夜貓子探險隊．給國小低年級小朋友和爸爸媽媽．內容整理於 2026 年 11 月</p>' +
     '<p>動物照片來自 Wikimedia Commons，作者與授權請看<a href="credits.html">照片來源</a>。</p>';
   document.body.appendChild(foot);
 
