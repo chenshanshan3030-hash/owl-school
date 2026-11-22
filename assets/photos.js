@@ -1,14 +1,14 @@
 window.PHOTOS = {
     "lettia":  {
-                   "src":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Collared_Scops-Owl_by_Tisha_Mukherjee_05.jpg/960px-Collared_Scops-Owl_by_Tisha_Mukherjee_05.jpg",
-                   "page":  "https://commons.wikimedia.org/wiki/File:Collared_Scops-Owl_by_Tisha_Mukherjee_05.jpg",
-                   "by":  "Tisha Mukherjee",
-                   "lic":  "CC BY-SA 4.0"
+                   "src":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Collared_Scops_Owl%28Otus_lettia%29_by_Jack_Walf_.jpg/960px-Collared_Scops_Owl%28Otus_lettia%29_by_Jack_Walf_.jpg",
+                   "page":  "https://commons.wikimedia.org/wiki/File:Collared_Scops_Owl(Otus_lettia)_by_Jack_Walf_.jpg",
+                   "by":  "jack walf",
+                   "lic":  "CC BY-SA 2.0"
                },
     "spilo":  {
-                  "src":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Otus_spilocephalus_ssp._hambroecki.jpg/960px-Otus_spilocephalus_ssp._hambroecki.jpg",
-                  "page":  "https://commons.wikimedia.org/wiki/File:Otus_spilocephalus_ssp._hambroecki.jpg",
-                  "by":  "林正文",
+                  "src":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Mountain_Scops-Owl_Otus_spilocephalus_hambroecki_in_Taichung_City%2C_Republic_of_China.jpg/960px-Mountain_Scops-Owl_Otus_spilocephalus_hambroecki_in_Taichung_City%2C_Republic_of_China.jpg",
+                  "page":  "https://commons.wikimedia.org/wiki/File:Mountain_Scops-Owl_Otus_spilocephalus_hambroecki_in_Taichung_City,_Republic_of_China.jpg",
+                  "by":  "Friedemann Arndt",
                   "lic":  "CC BY 4.0"
               },
     "elegans":  {
@@ -24,10 +24,10 @@ window.PHOTOS = {
                   "lic":  "CC BY-SA 4.0"
               },
     "ketupa":  {
-                   "src":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Tawny_Fish_Owl_-_Ketupa_flavipes_-_P1020707.jpg/960px-Tawny_Fish_Owl_-_Ketupa_flavipes_-_P1020707.jpg",
-                   "page":  "https://commons.wikimedia.org/wiki/File:Tawny_Fish_Owl_-_Ketupa_flavipes_-_P1020707.jpg",
-                   "by":  "Raman Kumar",
-                   "lic":  "CC BY-SA 4.0"
+                   "src":  "https://upload.wikimedia.org/wikipedia/commons/2/2f/Tawny_Fish_Owl.jpg",
+                   "page":  "https://commons.wikimedia.org/wiki/File:Tawny_Fish_Owl.jpg",
+                   "by":  "Jayanth Sharma",
+                   "lic":  "CC BY 3.0"
                },
     "tyto":  {
                  "src":  "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Tyto_longimembris_pithecops_218789572.jpg/960px-Tyto_longimembris_pithecops_218789572.jpg",

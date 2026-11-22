@@ -33,7 +33,7 @@
   var head = document.createElement("header");
   head.innerHTML =
     '<div class="banner"><svg class="stars" aria-hidden="true" width="100%" height="100%">' + stars +
-    '<circle cx="90%" cy="34%" r="16" fill="#ffd560"/><circle cx="91.5%" cy="28%" r="15" fill="#344a78"/></svg>' +
+    '</svg><svg class="moon" viewBox="0 0 40 40" aria-hidden="true"><path d="M26 3 A17 17 0 1 0 37 29 A14 14 0 1 1 26 3 Z" fill="#ffd560"/></svg>' +
     '<div class="banner-in"><a class="logo" href="index.html">' + owlSVG("") + '貓頭鷹小學堂</a></div>' +
     '<svg class="hills" viewBox="0 0 1200 46" preserveAspectRatio="none" aria-hidden="true"><path d="M0 46 L0 26 Q150 2 300 22 T600 20 T900 18 T1200 24 L1200 46 Z"/></svg></div>';
   var nav = document.createElement("nav");

@@ -62,6 +62,7 @@ h1, h2, h3 { margin: 0; line-height: 1.35; font-weight: 700; text-wrap: balance;
   overflow: hidden;
 }
 .banner .stars { position: absolute; inset: 0; pointer-events: none; }
+.banner .moon { position: absolute; right: 9%; top: 12px; width: 38px; height: 38px; }
 .banner-in {
   position: relative;
   max-width: 1100px; margin: 0 auto;
@@ -107,6 +108,11 @@ h1, h2, h3 { margin: 0; line-height: 1.35; font-weight: 700; text-wrap: balance;
 .title-block h1 { font-size: clamp(2.2rem, 7vw, 3.6rem); color: var(--forest); }
 .title-block .sub { font-size: 1.25rem; color: var(--soft-ink); margin-top: 6px; }
 .title-block .hero-pic { width: 220px; }
+.photo.hero-pic { background: none; }
+.photo.hero-pic img { aspect-ratio: 1; border-radius: 50%; border: 6px solid var(--sun); }
+.photo.hero-pic.red img { border-color: var(--berry); }
+.photo.hero-pic figcaption { position: static; background: none; color: var(--soft-ink); text-align: center; padding: 4px 0 0; max-width: none; }
+.photo.hero-pic figcaption a { color: var(--soft-ink); }
 
 /* Ribbon section heading */
 .ribbon {
