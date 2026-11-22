@@ -4,159 +4,155 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>貓頭鷹學習單｜貓頭鷹小學堂</title>
-<meta name="description" content="可以列印的貓頭鷹小偵探學習單：是非題、填空、連連看、保育情境題與畫畫，附家長參考答案。">
+<meta name="description" content="可以列印的貓頭鷹小偵探學習單，給國小低年級：是非題、看圖選選看、連連看、保育題和畫畫。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Iansui&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap">
 <link rel="stylesheet" href="assets/style.css">
 <style>
-.blank { display: inline-block; min-width: 5em; border-bottom: 2px solid var(--ink); }
-.qlist { margin: 0; padding-left: 1.4em; display: flex; flex-direction: column; gap: 10px; }
-.qlist .choices { list-style: none; padding-left: 0.4em; margin: 4px 0 0; display: flex; flex-direction: column; gap: 2px; }
-.bank { background: var(--moon-soft); border: 2px dashed var(--moon); border-radius: 14px; padding: 10px 16px; font-weight: 700; letter-spacing: 0.1em; }
-.match { display: grid; grid-template-columns: 1fr 70px 1.6fr; gap: 8px 0; align-items: center; }
-.match .l, .match .r { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 8px 12px; }
-.match .l { font-weight: 700; display: flex; justify-content: space-between; }
-.match .r::before { content: "● "; color: var(--muted); }
-.match .l::after { content: "●"; color: var(--muted); }
-.drawbox { height: 280px; border: 2px dashed var(--line); border-radius: 18px; display: grid; place-items: center; color: var(--muted); }
-.namebar { display: flex; flex-wrap: wrap; gap: 8px 28px; font-size: 1.05rem; }
+.sheet { background: var(--card); border: 3px solid var(--line); border-radius: 26px; padding: 20px 22px; display: flex; flex-direction: column; gap: 14px; }
+.sheet h3 { font-size: 1.35rem; color: var(--forest); }
+.qs { margin: 0; padding-left: 1.6em; display: flex; flex-direction: column; gap: 12px; font-size: 1.2rem; }
+.paren { display: inline-block; width: 3em; text-align: center; }
+.choices { display: flex; flex-wrap: wrap; gap: 8px 22px; list-style: none; padding: 4px 0 0; margin: 0; font-size: 1.15rem; }
+.blank { display: inline-block; min-width: 7em; border-bottom: 2px solid var(--ink); }
+.match { display: grid; grid-template-columns: 1fr 64px 1.4fr; gap: 10px 0; align-items: center; }
+.m-l { display: flex; align-items: center; gap: 10px; background: var(--paper-2); border-radius: 16px; padding: 6px 10px; }
+.m-l .photo { width: 64px; height: 64px; border-radius: 50%; overflow: hidden; flex: none; }
+.m-l .photo img { aspect-ratio: 1; height: 100%; }
+.m-l .photo figcaption { display: none; }
+.m-l b { font-size: 1.2rem; flex: 1; }
+.m-l::after, .m-r::before { content: "●"; color: var(--soft-ink); }
+.m-r { background: var(--paper-2); border-radius: 16px; padding: 10px 12px; font-size: 1.1rem; display: flex; gap: 8px; }
+.drawbox { height: 300px; border: 3px dashed var(--line); border-radius: 24px; display: grid; place-items: center; color: var(--soft-ink); font-size: 1.3rem; }
+.namebar { display: flex; flex-wrap: wrap; gap: 8px 28px; font-size: 1.2rem; }
+@media (max-width: 640px) { .match { grid-template-columns: 1fr 24px 1fr; } .m-l .photo { width: 44px; height: 44px; } }
 @media print {
-  .drawbox { height: 340px; }
-  details { display: none; }
-  .print-break { break-before: page; }
+  .sheet { border-width: 2px; break-inside: avoid; }
+  .drawbox { height: 360px; }
+  .m-l .photo { display: none; }
 }
 </style>
 </head>
-<body>
-<header class="site-head">
-  <nav class="nav" aria-label="網站導覽">
-    <a class="brand" href="index.html"><svg viewBox="0 0 28 30" aria-hidden="true"><path d="M4 6 L8 10 L20 10 L24 6 L24 22 C24 27 20 29 14 29 C8 29 4 27 4 22 Z" class="owl-body"/><circle cx="10" cy="15" r="4.5" class="owl-face"/><circle cx="18" cy="15" r="4.5" class="owl-face"/><circle cx="10" cy="15" r="2.4" class="owl-eye"/><circle cx="18" cy="15" r="2.4" class="owl-eye"/><circle cx="10" cy="15" r="1.2" class="owl-pupil"/><circle cx="18" cy="15" r="1.2" class="owl-pupil"/><path d="M12.5 19 L15.5 19 L14 22 Z" class="owl-beak"/></svg>貓頭鷹小學堂</a>
-    <ul>
-      <li><a href="index.html">貓頭鷹小百科</a></li>
-      <li><a href="taiwan-owls.html">台灣貓頭鷹與保育</a></li>
-      <li><a href="where.html">哪裡看貓頭鷹</a></li>
-      <li><a href="worksheet.html" aria-current="page">學習單</a></li>
-      <li><a href="nocturnal.html">夜行性動物</a></li>
-      <li><a href="birds.html">台灣鳥類</a></li>
-      <li><a href="pets.html">可以養嗎？</a></li>
-    </ul>
-  </nav>
-</header>
+<body data-page="worksheet.html">
+<main class="page">
 
-<main class="wrap">
-
-  <header class="hero" style="grid-template-columns:1fr">
-    <div class="hero-text">
-      <p class="eyebrow">可以列印</p>
+  <div class="title-block">
+    <div>
       <h1>貓頭鷹小偵探學習單</h1>
-      <p class="namebar"><span>姓名：<span class="blank" style="min-width:8em"></span></span><span>日期：<span class="blank" style="min-width:8em"></span></span><span>得分：<span class="blank" style="min-width:3em"></span>／22</span></p>
-      <p class="lede">小偵探，你好！完成下面四個關卡，就能成為「貓頭鷹保育小尖兵」！每答對一題得 1 分。</p>
-      <p class="no-print"><button class="btn primary" type="button" onclick="window.print()">列印學習單</button> <span class="note">列印時會自動隱藏選單和答案。</span></p>
+      <p class="namebar"><span>姓名：<span class="blank"></span></span><span>日期：<span class="blank"></span></span><span>得分：<span class="blank" style="min-width:3em"></span>／22</span></p>
     </div>
-  </header>
+    <div class="hero-pic no-print" data-owlie></div>
+  </div>
+
+  <div class="doctor no-print">
+    <div data-owlie></div>
+    <p class="bubble"><span class="name">嗚嗚博士</span>完成四個關卡，<br>你就是<b>貓頭鷹保育小尖兵</b>！<br><button class="btn primary" type="button" onclick="window.print()" style="margin-top:8px">🖨️ 列印學習單</button></p>
+  </div>
 
   <section aria-labelledby="l1">
-    <p class="eyebrow">第一關</p>
-    <h2 id="l1">貓頭鷹超能力</h2>
-    <h3>是非題：對的畫 ○，錯的畫 ✕</h3>
-    <ol class="qlist">
-      <li>（　　）貓頭鷹的頭可以轉大約 270 度。</li>
-      <li>（　　）貓頭鷹可以像我們一樣轉動眼珠。</li>
-      <li>（　　）角鴞頭上兩撮尖尖的毛，就是牠的耳朵。</li>
-      <li>（　　）貓頭鷹飛行時幾乎沒有聲音。</li>
-      <li>（　　）所有貓頭鷹都只在晚上出來活動。</li>
-    </ol>
-    <h3>填空題：從詞庫選出正確的詞</h3>
-    <p class="bank">詞庫：食繭　　顏盤　　頸椎　　一高一低　　老鼠</p>
-    <ol class="qlist">
-      <li>貓頭鷹有 14 節<span class="blank"></span>，比人類多一倍。</li>
-      <li>臉上一圈圓盤狀的羽毛叫做<span class="blank"></span>，可以收集聲音。</li>
-      <li>很多貓頭鷹兩邊耳朵的位置<span class="blank"></span>，可以判斷聲音從哪裡來。</li>
-      <li>貓頭鷹吐出來、包著骨頭和毛的小團子叫做<span class="blank"></span>。</li>
-      <li>貓頭鷹最常吃的食物之一是<span class="blank"></span>。</li>
-    </ol>
+    <h2 class="ribbon" id="l1"><span class="ico" aria-hidden="true">1️⃣</span>第一關：超能力</h2>
+    <div class="sheet">
+      <h3>對的畫 ⭕，錯的畫 ❌</h3>
+      <ol class="qs">
+        <li>（<span class="paren"></span>）貓頭鷹的頭可以轉到後面。</li>
+        <li>（<span class="paren"></span>）貓頭鷹的眼珠會轉來轉去。</li>
+        <li>（<span class="paren"></span>）角鴞頭上尖尖的毛是耳朵。</li>
+        <li>（<span class="paren"></span>）貓頭鷹飛的時候很安靜。</li>
+        <li>（<span class="paren"></span>）每一種貓頭鷹都只在晚上出來。</li>
+      </ol>
+    </div>
+    <div class="sheet">
+      <h3>選選看：把對的答案圈起來</h3>
+      <ol class="qs">
+        <li>貓頭鷹臉上圓圓的羽毛，可以幫牠：
+          <ul class="choices"><li>(A) 👂 聽聲音</li><li>(B) 🍽️ 吃東西</li></ul></li>
+        <li>貓頭鷹天黑黑也看得到，因為牠有：
+          <ul class="choices"><li>(A) 🔦 手電筒</li><li>(B) 👀 大眼睛</li></ul></li>
+        <li>貓頭鷹最常吃什麼？
+          <ul class="choices"><li>(A) 🐭 老鼠</li><li>(B) 🍌 香蕉</li></ul></li>
+        <li>貓頭鷹吐出來的骨頭和毛，叫做：
+          <ul class="choices"><li>(A) 食繭</li><li>(B) 鳥蛋</li></ul></li>
+        <li>貓頭鷹的頭最多可以轉大約：
+          <ul class="choices"><li>(A) 90 度</li><li>(B) 270 度</li></ul></li>
+      </ol>
+    </div>
   </section>
 
   <section aria-labelledby="l2">
-    <p class="eyebrow">第二關</p>
-    <h2 id="l2">認識台灣貓頭鷹</h2>
-    <h3>連連看：把貓頭鷹和牠的特色用線連起來</h3>
-    <div class="match">
-      <div class="l">領角鴞</div><div></div><div class="r">只住在蘭嶼這個小島</div>
-      <div class="l">蘭嶼角鴞</div><div></div><div class="r">住在草原，在地上築巢，非常稀有</div>
-      <div class="l">黃魚鴞</div><div></div><div class="r">最常見，都市公園和校園都可能遇到</div>
-      <div class="l">草鴞</div><div></div><div class="r">台灣最小的貓頭鷹之一，白天也會活動</div>
-      <div class="l">褐林鴞</div><div></div><div class="r">住在溪流旁，會抓魚</div>
-      <div class="l">鵂鶹</div><div></div><div class="r">體型大，住在中高海拔森林</div>
+    <h2 class="ribbon orange" id="l2"><span class="ico" aria-hidden="true">2️⃣</span>第二關：連連看</h2>
+    <div class="sheet">
+      <h3>把貓頭鷹和牠的特色連起來</h3>
+      <div class="match">
+        <div class="m-l"><figure class="photo" data-photo="lettia" data-alt="領角鴞"></figure><b>領角鴞</b></div><div></div><div class="m-r">只住在蘭嶼小島</div>
+        <div class="m-l"><figure class="photo" data-photo="elegans" data-alt="蘭嶼角鴞"></figure><b>蘭嶼角鴞</b></div><div></div><div class="m-r">住在草地，快要不見了</div>
+        <div class="m-l"><figure class="photo" data-photo="ketupa" data-alt="黃魚鴞"></figure><b>黃魚鴞</b></div><div></div><div class="m-r">最常見，學校公園都有</div>
+        <div class="m-l"><figure class="photo" data-photo="tyto" data-alt="草鴞"></figure><b>草鴞</b></div><div></div><div class="m-r">小不點，白天也出來</div>
+        <div class="m-l"><figure class="photo" data-photo="strix" data-alt="褐林鴞"></figure><b>褐林鴞</b></div><div></div><div class="m-r">住在小河邊，會抓魚</div>
+        <div class="m-l"><figure class="photo" data-photo="glaucidium" data-alt="鵂鶹"></figure><b>鵂鶹</b></div><div></div><div class="m-r">大塊頭，住在高山森林</div>
+      </div>
     </div>
   </section>
 
-  <section aria-labelledby="l3" class="print-break">
-    <p class="eyebrow">第三關</p>
-    <h2 id="l3">保育小尖兵</h2>
-    <h3>怎麼做才對？圈出正確的答案</h3>
-    <ol class="qlist">
-      <li>在公園看到一隻貓頭鷹停在樹上，我應該：
-        <ul class="choices"><li>(A) 大聲叫牠下來</li><li>(B) 安靜地遠遠看</li><li>(C) 丟食物給牠吃</li></ul></li>
-      <li>晚上去夜觀，拍貓頭鷹的時候：
-        <ul class="choices"><li>(A) 用閃光燈拍得更清楚</li><li>(B) 不開閃光燈，也不用手電筒直照牠</li></ul></li>
-      <li>在路邊撿到一隻受傷的貓頭鷹：
-        <ul class="choices"><li>(A) 帶回家自己養</li><li>(B) 請大人打電話給動物救傷單位</li></ul></li>
-      <li>同學說想買一隻貓頭鷹當寵物：
-        <ul class="choices"><li>(A) 好主意，牠很可愛</li><li>(B) 不行，貓頭鷹是受保護的野生動物</li></ul></li>
-      <li>爸爸媽媽想趕走老鼠，怎樣對貓頭鷹比較好？
-        <ul class="choices"><li>(A) 到處放毒鼠藥</li><li>(B) 不用毒藥，讓貓頭鷹來幫忙抓老鼠</li></ul></li>
-      <li>家裡的大玻璃窗可以怎麼幫助鳥類？
-        <ul class="choices"><li>(A) 貼上貼紙，讓鳥看得到玻璃</li><li>(B) 把玻璃擦得越亮越好</li></ul></li>
-    </ol>
+  <section aria-labelledby="l3">
+    <h2 class="ribbon night" id="l3"><span class="ico" aria-hidden="true">3️⃣</span>第三關：保育小尖兵</h2>
+    <div class="sheet">
+      <h3>怎麼做才對？把對的答案圈起來</h3>
+      <ol class="qs">
+        <li>在公園看到貓頭鷹，我會：
+          <ul class="choices"><li>(A) 大聲叫牠</li><li>(B) 安靜地看</li></ul></li>
+        <li>晚上拍貓頭鷹的時候：
+          <ul class="choices"><li>(A) 開閃光燈</li><li>(B) 不開閃光燈</li></ul></li>
+        <li>撿到受傷的貓頭鷹：
+          <ul class="choices"><li>(A) 帶回家養</li><li>(B) 請大人打電話求救</li></ul></li>
+        <li>同學想買貓頭鷹當寵物：
+          <ul class="choices"><li>(A) 好主意</li><li>(B) 不可以，牠是野生動物</li></ul></li>
+        <li>家裡有老鼠，怎樣對貓頭鷹比較好？
+          <ul class="choices"><li>(A) 放毒老鼠藥</li><li>(B) 不用毒藥</li></ul></li>
+        <li>大玻璃窗可以怎麼保護鳥？
+          <ul class="choices"><li>(A) 貼上貼紙</li><li>(B) 擦得亮亮的</li></ul></li>
+      </ol>
+    </div>
   </section>
 
   <section aria-labelledby="l4">
-    <p class="eyebrow">第四關（不計分）</p>
-    <h2 id="l4">畫畫與我的保育承諾</h2>
-    <h3>畫一畫：你最喜歡的貓頭鷹</h3>
-    <p>記得畫出大大的眼睛和圓圓的顏盤！</p>
-    <div class="drawbox">畫畫區</div>
-    <h3>我的保育承諾：在做得到的事情前面打勾</h3>
-    <ul class="checklist">
-      <li><label><input type="checkbox"><span>看到貓頭鷹時，我會安靜地遠遠觀察</span></label></li>
-      <li><label><input type="checkbox"><span>我不會抓貓頭鷹，也不會把牠當寵物</span></label></li>
-      <li><label><input type="checkbox"><span>我會告訴家人：不要用毒鼠藥</span></label></li>
-      <li><label><input type="checkbox"><span>我會把學到的貓頭鷹知識告訴一位朋友</span></label></li>
-    </ul>
-    <p>簽名：<span class="blank" style="min-width:10em"></span></p>
+    <h2 class="ribbon" id="l4"><span class="ico" aria-hidden="true">4️⃣</span>第四關：畫畫和承諾</h2>
+    <div class="sheet">
+      <h3>畫一隻你最喜歡的貓頭鷹（不計分）</h3>
+      <div class="drawbox">🎨 畫在這裡</div>
+    </div>
+    <div class="sheet">
+      <h3>我做得到！打勾 ✔</h3>
+      <ul class="promise">
+        <li><label><input type="checkbox"><span>我會安靜地遠遠看貓頭鷹。</span></label></li>
+        <li><label><input type="checkbox"><span>我不會抓貓頭鷹，也不會養牠。</span></label></li>
+        <li><label><input type="checkbox"><span>我會告訴家人：不要用毒老鼠藥。</span></label></li>
+        <li><label><input type="checkbox"><span>我會把貓頭鷹的故事說給朋友聽。</span></label></li>
+      </ul>
+      <p style="font-size:1.2rem">簽名：<span class="blank"></span></p>
+    </div>
   </section>
 
-  <section aria-labelledby="ans" class="no-print">
-    <p class="eyebrow">家長頁</p>
-    <h2 id="ans">參考答案</h2>
-    <details>
-      <summary>按這裡看答案（全部 22 題，第四關不計分）</summary>
-      <div style="display:flex;flex-direction:column;gap:12px">
-        <p><b>第一關 是非題：</b>1 ○、2 ✕（眼睛固定，靠轉頭）、3 ✕（只是羽毛）、4 ○、5 ✕（鵂鶹、穴鴞白天也活動）</p>
-        <p><b>第一關 填空題：</b>1 頸椎、2 顏盤、3 一高一低、4 食繭、5 老鼠</p>
-        <div class="table-wrap"><table>
-          <thead><tr><th>第二關 貓頭鷹</th><th>特色</th></tr></thead>
-          <tbody>
-            <tr><td>領角鴞</td><td>最常見，都市公園和校園都可能遇到</td></tr>
-            <tr><td>蘭嶼角鴞</td><td>只住在蘭嶼這個小島</td></tr>
-            <tr><td>黃魚鴞</td><td>住在溪流旁，會抓魚</td></tr>
-            <tr><td>草鴞</td><td>住在草原，在地上築巢，非常稀有</td></tr>
-            <tr><td>褐林鴞</td><td>體型大，住在中高海拔森林</td></tr>
-            <tr><td>鵂鶹</td><td>台灣最小的貓頭鷹之一，白天也會活動</td></tr>
-          </tbody>
-        </table></div>
-        <p><b>第三關：</b>1 B、2 B、3 B、4 B、5 B、6 A</p>
-        <p class="note-dusk"><b>延伸話題：</b>草鴞在台灣是第 I 級瀕臨絕種保育類。做完第三關第 5 題後，可以跟孩子聊聊「老鼠吃了毒藥，貓頭鷹吃了老鼠會怎樣」。</p>
-        <p class="note">給七歲的小朋友，第一關填空題可能偏難，可以由大人讀題、一起討論。</p>
-      </div>
-    </details>
-  </section>
+  <details class="parents">
+    <summary>給爸爸媽媽：參考答案</summary>
+    <div class="inner">
+      <p>全部 22 題，每題 1 分，第四關不計分。列印時答案與這個區塊會自動隱藏。</p>
+      <ul>
+        <li><b>第一關 是非：</b>1 ⭕、2 ❌（眼睛不會轉，靠轉頭）、3 ❌（只是羽毛）、4 ⭕、5 ❌（鵂鶹、穴鴞白天也活動）</li>
+        <li><b>第一關 選選看：</b>1 A、2 B、3 A、4 A、5 B</li>
+        <li><b>第二關：</b>領角鴞→最常見；蘭嶼角鴞→只住蘭嶼；黃魚鴞→住小河邊會抓魚；草鴞→住草地快要不見了；褐林鴞→大塊頭住高山森林；鵂鶹→小不點白天也出來</li>
+        <li><b>第三關：</b>1 B、2 B、3 B、4 B、5 B、6 A</li>
+      </ul>
+      <p>延伸話題：做完第三關第 5 題，可以和孩子聊「老鼠吃了毒藥，貓頭鷹吃了老鼠會怎樣」。草鴞在台灣是第 I 級瀕臨絕種保育類。</p>
+    </div>
+  </details>
 
-  <footer class="site-foot">
-    <p>給大人：學習單內容來自本站「貓頭鷹小百科」與「台灣貓頭鷹與保育」兩頁，整理於 2026 年 11 月。</p>
-  </footer>
+  <nav class="next" aria-label="下一站">
+    <a href="index.html"><span class="ico" aria-hidden="true">🦉</span>回去複習超能力</a>
+    <a href="taiwan-owls.html"><span class="ico" aria-hidden="true">🌳</span>複習台灣貓頭鷹</a>
+  </nav>
 </main>
+<script src="assets/photos.js"></script>
+<script src="assets/site.js"></script>
 </body>
 </html>

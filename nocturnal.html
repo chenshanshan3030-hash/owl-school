@@ -3,121 +3,98 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>台灣夜行性動物｜貓頭鷹小學堂</title>
-<meta name="description" content="台灣常見的夜行性動物：鳥類、哺乳類、兩棲爬蟲類與昆蟲，還有帶小孩夜觀的建議。">
+<title>晚上的動物｜貓頭鷹小學堂</title>
+<meta name="description" content="給國小低年級：台灣晚上出來活動的動物，有鳥、毛毛動物、青蛙壁虎和小蟲。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Iansui&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap">
 <link rel="stylesheet" href="assets/style.css">
+<style>.art.dark { background: #263557; }</style>
 </head>
-<body>
-<header class="site-head">
-  <nav class="nav" aria-label="網站導覽">
-    <a class="brand" href="index.html"><svg viewBox="0 0 28 30" aria-hidden="true"><path d="M4 6 L8 10 L20 10 L24 6 L24 22 C24 27 20 29 14 29 C8 29 4 27 4 22 Z" class="owl-body"/><circle cx="10" cy="15" r="4.5" class="owl-face"/><circle cx="18" cy="15" r="4.5" class="owl-face"/><circle cx="10" cy="15" r="2.4" class="owl-eye"/><circle cx="18" cy="15" r="2.4" class="owl-eye"/><circle cx="10" cy="15" r="1.2" class="owl-pupil"/><circle cx="18" cy="15" r="1.2" class="owl-pupil"/><path d="M12.5 19 L15.5 19 L14 22 Z" class="owl-beak"/></svg>貓頭鷹小學堂</a>
-    <ul>
-      <li><a href="index.html">貓頭鷹小百科</a></li>
-      <li><a href="taiwan-owls.html">台灣貓頭鷹與保育</a></li>
-      <li><a href="where.html">哪裡看貓頭鷹</a></li>
-      <li><a href="worksheet.html">學習單</a></li>
-      <li><a href="nocturnal.html" aria-current="page">夜行性動物</a></li>
-      <li><a href="birds.html">台灣鳥類</a></li>
-      <li><a href="pets.html">可以養嗎？</a></li>
-    </ul>
-  </nav>
-</header>
+<body data-page="nocturnal.html">
+<main class="page">
 
-<main class="wrap">
-
-  <header class="hero" style="grid-template-columns:1fr">
-    <div class="hero-text">
-      <p class="eyebrow">天黑以後</p>
-      <h1>晚上出來活動的台灣動物</h1>
-      <p class="lede">貓頭鷹不是唯一的夜貓子！天黑以後，蝙蝠、青蛙、白鼻心、螢火蟲都出來了。一起認識這些夜晚的鄰居。</p>
+  <div class="title-block">
+    <div>
+      <h1>晚上的動物</h1>
+      <p class="sub">天黑了，<br>誰出來散步了呢？</p>
     </div>
-  </header>
+    <figure class="photo hero-pic" data-photo="petaurista" data-alt="白面鼯鼠的照片" style="border-radius:50%;overflow:hidden;border:6px solid var(--sun)"></figure>
+  </div>
+
+  <div class="doctor">
+    <div data-owlie></div>
+    <p class="bubble"><span class="name">嗚嗚博士</span>晚上不是只有我喔！<br>還有很多<b>夜貓子朋友</b>，一起來認識。</p>
+  </div>
 
   <section aria-labelledby="birds">
-    <p class="eyebrow">鳥類</p>
-    <h2 id="birds">晚上的鳥</h2>
-    <div class="table-wrap"><table>
-      <thead><tr><th>動物</th><th>在哪裡看得到</th><th>小知識</th></tr></thead>
-      <tbody>
-        <tr><td><b>領角鴞</b></td><td>低海拔樹林、校園、公園</td><td>叫聲是低沉的「嗚—」，最常見的貓頭鷹</td></tr>
-        <tr><td><b>黃嘴角鴞</b></td><td>中低海拔山區</td><td>體型小，叫聲像「噓—噓—」</td></tr>
-        <tr><td><b>夜鷺</b></td><td>河邊、池塘、公園水邊</td><td>白天也看得到，晚上抓魚更積極</td></tr>
-        <tr><td><b>台灣夜鷹</b></td><td>河床、空地，甚至都市屋頂</td><td>夏夜叫聲很大聲，常被誤以為是貓頭鷹</td></tr>
-      </tbody>
-    </table></div>
+    <h2 class="ribbon night" id="birds"><span class="ico" aria-hidden="true">🐦</span>晚上的鳥</h2>
+    <div class="cards">
+      <article class="pcard"><figure class="photo" data-photo="lettia" data-alt="領角鴞"></figure><div class="body"><h3>領角鴞</h3><p>叫聲是低低的「嗚—」。</p></div></article>
+      <article class="pcard"><figure class="photo" data-photo="nycticorax" data-alt="夜鷺"></figure><div class="body"><h3>夜鷺</h3><p>站在水邊不動，<br>晚上抓魚吃。</p></div></article>
+      <article class="pcard"><div class="art dark"><span class="emoji" aria-hidden="true">🌙🐦</span></div><div class="body"><h3>台灣夜鷹</h3><p>夏天晚上叫得很大聲，<br>常被以為是貓頭鷹！</p></div></article>
+    </div>
   </section>
 
   <section aria-labelledby="mammals">
-    <p class="eyebrow">哺乳類</p>
-    <h2 id="mammals">晚上的毛毛動物</h2>
-    <div class="table-wrap"><table>
-      <thead><tr><th>動物</th><th>在哪裡看得到</th><th>小知識</th></tr></thead>
-      <tbody>
-        <tr><td><b>白面鼯鼠</b></td><td>中海拔森林（如大雪山）</td><td>會在樹之間「滑翔」，不是真的飛</td></tr>
-        <tr><td><b>蝙蝠</b></td><td>都市路燈旁、屋簷</td><td>唯一真的會飛的哺乳動物，一晚可以吃很多蚊子</td></tr>
-        <tr><td><b>鼬獾</b></td><td>低中海拔山區</td><td>臉上有白斑，會挖土找蚯蚓吃</td></tr>
-        <tr><td><b>白鼻心</b></td><td>低中海拔山區、果園</td><td>臉中間一條白線，愛吃水果</td></tr>
-        <tr><td><b>台灣野兔</b></td><td>草地、農地邊</td><td>晚上出來吃草</td></tr>
-        <tr><td><b>山羌</b></td><td>山區森林</td><td>叫聲像狗叫，所以又叫「吠鹿」</td></tr>
-        <tr><td><b>穿山甲</b></td><td>低海拔山區</td><td>全身鱗片，會捲成一顆球；保育類</td></tr>
-        <tr><td><b>東亞刺蝟</b></td><td>金門</td><td>台灣本島沒有野生刺蝟</td></tr>
-      </tbody>
-    </table></div>
+    <h2 class="ribbon" id="mammals"><span class="ico" aria-hidden="true">🐾</span>晚上的毛毛動物</h2>
+    <div class="cards">
+      <article class="pcard star"><figure class="photo" data-photo="petaurista" data-alt="白面鼯鼠"></figure><div class="body"><h3>白面鼯鼠</h3><p>會從這棵樹<b class="big-word">滑翔</b>到那棵樹！</p></div></article>
+      <article class="pcard"><figure class="photo" data-photo="paguma" data-alt="白鼻心"></figure><div class="body"><h3>白鼻心</h3><p>臉中間有一條白線。<br>愛吃水果。</p></div></article>
+      <article class="pcard warn"><figure class="photo" data-photo="manis" data-alt="穿山甲"></figure><div class="body"><span class="badge red">保育類</span><h3>穿山甲</h3><p>全身都是鱗片，<br>害怕時會捲成一顆球。</p></div></article>
+      <article class="pcard"><figure class="photo" data-photo="muntiacus" data-alt="山羌"></figure><div class="body"><h3>山羌</h3><p>叫聲像小狗在叫，<br>所以又叫「吠鹿」。</p></div></article>
+      <article class="pcard"><div class="art dark"><span class="emoji" aria-hidden="true">🦇</span></div><div class="body"><h3>蝙蝠</h3><p>唯一真的會飛的哺乳動物。<br>一個晚上吃好多蚊子！</p></div></article>
+      <article class="pcard"><div class="art dark"><span class="emoji" aria-hidden="true">🦡</span></div><div class="body"><h3>鼬獾</h3><p>臉上有白色斑點，<br>會挖土找蚯蚓吃。</p></div></article>
+    </div>
   </section>
 
   <section aria-labelledby="herps">
-    <p class="eyebrow">兩棲爬蟲類</p>
-    <h2 id="herps">晚上的青蛙、壁虎和蛇</h2>
-    <div class="table-wrap"><table>
-      <thead><tr><th>動物</th><th>在哪裡看得到</th><th>小知識</th></tr></thead>
-      <tbody>
-        <tr><td><b>蛙類</b>（面天樹蛙、莫氏樹蛙、貢德氏赤蛙等）</td><td>山邊水池、溪溝、稻田</td><td>夜觀主角！不同季節有不同的蛙在叫</td></tr>
-        <tr><td><b>黑眶蟾蜍</b></td><td>公園、住家附近</td><td>皮膚有毒腺，摸了要洗手</td></tr>
-        <tr><td><b>壁虎（蝎虎）</b></td><td>家裡牆上、路燈下</td><td>會「嘖嘖嘖」叫，在燈下等蟲吃</td></tr>
-        <tr><td><b>蛇類</b>（赤尾青竹絲、雨傘節等）</td><td>山區步道</td><td><span class="tag red">小心</span> 夜觀最需要注意，看到不要靠近</td></tr>
-      </tbody>
-    </table></div>
+    <h2 class="ribbon orange" id="herps"><span class="ico" aria-hidden="true">🐸</span>晚上的青蛙和壁虎</h2>
+    <div class="cards">
+      <article class="pcard star"><figure class="photo" data-photo="treefrog" data-alt="莫氏樹蛙"></figure><div class="body"><h3>莫氏樹蛙</h3><p>綠綠的樹蛙，<br>晚上在水池邊唱歌。</p></div></article>
+      <article class="pcard"><figure class="photo" data-photo="toad" data-alt="黑眶蟾蜍"></figure><div class="body"><h3>黑眶蟾蜍</h3><p>皮膚有毒，<br>摸了要洗手喔！</p></div></article>
+      <article class="pcard"><figure class="photo" data-photo="gecko" data-alt="壁虎"></figure><div class="body"><h3>壁虎</h3><p>在路燈下等蟲子，<br>會「嘖嘖嘖」叫。</p></div></article>
+      <article class="pcard warn"><div class="art dark"><span class="emoji" aria-hidden="true">🐍⚠️</span></div><div class="body"><span class="badge red">要小心</span><h3>蛇</h3><p>山上晚上可能有蛇。<br>看到了不要靠近！</p></div></article>
+    </div>
   </section>
 
   <section aria-labelledby="bugs">
-    <p class="eyebrow">昆蟲與其他</p>
-    <h2 id="bugs">晚上的小小動物</h2>
-    <div class="grid-3">
-      <div class="card"><h3>螢火蟲</h3><p>4–5 月是賞螢季，屁股會發光。</p></div>
-      <div class="card"><h3>獨角仙、鍬形蟲</h3><p>夏天晚上會被燈光吸引。</p></div>
-      <div class="card"><h3>蟋蟀、螽斯</h3><p>晚上「唱歌」的就是牠們。</p></div>
-      <div class="card"><h3>竹節蟲</h3><p>晚上才出來吃葉子，白天裝成樹枝。</p></div>
-      <div class="card"><h3>蜘蛛</h3><p>手電筒照過去，眼睛會反光。</p></div>
-      <div class="card"><h3>陸蟹（墾丁）</h3><p>夏天晚上到海邊產卵，開車要小心。</p></div>
+    <h2 class="ribbon night" id="bugs"><span class="ico" aria-hidden="true">✨</span>晚上的小蟲</h2>
+    <div class="cards">
+      <article class="pcard star"><div class="art dark"><span class="emoji" aria-hidden="true">✨🪲✨</span></div><div class="body"><h3>螢火蟲</h3><p>屁股會發光！<br>春天 4、5 月最多。</p></div></article>
+      <article class="pcard"><figure class="photo" data-photo="beetle" data-alt="獨角仙"></figure><div class="body"><h3>獨角仙</h3><p>夏天晚上，<br>會飛到燈光旁邊。</p></div></article>
+      <article class="pcard"><div class="art dark"><span class="emoji" aria-hidden="true">🦗🎵</span></div><div class="body"><h3>蟋蟀</h3><p>晚上「唧唧唧」唱歌的就是牠。</p></div></article>
     </div>
   </section>
 
-  <section aria-labelledby="tips">
-    <p class="eyebrow">給大人</p>
-    <h2 id="tips">帶七歲小孩夜觀的小建議</h2>
-    <ol class="plain">
-      <li><b>最好入門：</b>在公園、學校附近找蛙、壁虎、蟾蜍、蝙蝠，不用跑很遠。</li>
-      <li><b>季節活動：</b>春天看螢火蟲、夏天找獨角仙，小孩通常最興奮。</li>
-      <li><b>裝備：</b>手電筒（最好用紅光）、長袖長褲、包鞋、防蚊液。</li>
-      <li><b>規矩：</b>只看不抓、不大聲、手電筒不要一直照動物的眼睛。</li>
-    </ol>
-  </section>
-
-  <section aria-labelledby="more">
-    <p class="eyebrow">繼續探險</p>
-    <h2 id="more">下一站去哪裡？</h2>
-    <div class="next">
-      <a class="star" href="where.html"><b>哪裡看貓頭鷹</b><span>找一場夜觀活動吧！</span></a>
-      <a href="birds.html"><b>台灣鳥類</b><span>白天的鳥也很精彩。</span></a>
+  <section aria-labelledby="rules">
+    <h2 class="ribbon" id="rules"><span class="ico" aria-hidden="true">📋</span>晚上看動物的約定</h2>
+    <div class="rules">
+      <div class="rule"><span class="ico" aria-hidden="true">👀</span><b>只看不抓</b><p>讓動物自由自在。</p></div>
+      <div class="rule"><span class="ico" aria-hidden="true">🤫</span><b>小聲說話</b><p>動物才不會被嚇跑。</p></div>
+      <div class="rule"><span class="ico" aria-hidden="true">🔦</span><b>燈不亂照</b><p>不要一直照動物的眼睛。</p></div>
+      <div class="rule"><span class="ico" aria-hidden="true">🧑‍🤝‍🧑</span><b>跟著大人</b><p>不要自己跑走。</p></div>
     </div>
   </section>
 
-  <footer class="site-foot">
-    <p>給大人：這頁根據一般生態知識整理（2026 年 11 月），沒有逐項查證來源。保育等級等細節請以林業及自然保育署公告為準。</p>
-  </footer>
+  <details class="parents">
+    <summary>給爸爸媽媽：夜觀小建議</summary>
+    <div class="inner">
+      <ul>
+        <li>入門可在公園、學校附近找蛙、壁虎、蟾蜍、蝙蝠；春天賞螢、夏天找獨角仙最受孩子歡迎。</li>
+        <li>其他夜行動物：黃嘴角鴞（中低海拔）、台灣野兔（草地農地）、陸蟹（墾丁，夏夜產卵）、竹節蟲、人面蜘蛛（眼睛會反光）。東亞刺蝟只分布於金門，台灣本島沒有野生刺蝟。</li>
+        <li>山區步道可能有赤尾青竹絲、雨傘節等毒蛇，請走步道、穿包鞋、帶照明。</li>
+        <li>本頁依一般生態知識整理，未逐項查證；保育等級以林業及自然保育署公告為準。部分照片拍攝於台灣以外地區（同種或近緣族群）。</li>
+      </ul>
+    </div>
+  </details>
+
+  <nav class="next" aria-label="下一站">
+    <a href="where.html"><span class="ico" aria-hidden="true">🔦</span>去哪裡夜觀？</a>
+    <a href="birds.html"><span class="ico" aria-hidden="true">🐦</span>白天的鳥</a>
+  </nav>
 </main>
+<script src="assets/photos.js"></script>
+<script src="assets/site.js"></script>
 </body>
 </html>

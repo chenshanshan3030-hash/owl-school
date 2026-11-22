@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>照片來源｜貓頭鷹小學堂</title>
+<meta name="description" content="貓頭鷹小學堂使用的動物照片作者與授權。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.credits { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+.credit { background: var(--card); border: 2px solid var(--line); border-radius: 18px; overflow: hidden; font-family: "Noto Sans TC", sans-serif; font-size: 0.85rem; }
+.credit img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.credit div { padding: 8px 12px; }
+</style>
+</head>
+<body data-page="credits.html">
+<main class="page">
+  <div class="title-block"><div><h1>照片來源</h1><p class="sub">謝謝這些攝影師分享照片！</p></div></div>
+  <p class="parents" style="border-style:solid">本站動物照片皆來自 <a href="https://commons.wikimedia.org/">Wikimedia Commons</a>，依各自的創用 CC 授權或公眾領域使用，直接連結原始圖檔，未經修改（僅以裁切方式顯示）。點每張照片的說明可以看到原始頁面與完整授權。插圖與表情符號圖示為本站自製或系統內建。</p>
+  <div class="credits" id="list"></div>
+</main>
+<script src="assets/photos.js"></script>
+<script src="assets/site.js"></script>
+<script>
+(function () {
+  var names = { lettia: "領角鴞", spilo: "黃嘴角鴞", elegans: "蘭嶼角鴞", strix: "褐林鴞", ketupa: "黃魚鴞", tyto: "草鴞", glaucidium: "鵂鶹", barnowl: "倉鴞", pellet: "貓頭鷹食繭", burrowing: "穴鴞", eagleowl: "鵰鴞", urocissa: "台灣藍鵲", mikado: "帝雉", swinhoe: "藍腹鷴", myophonus: "台灣紫嘯鶇", nuchalis: "五色鳥", gorsachius: "黑冠麻鷺", platalea: "黑面琵鷺", butastur: "灰面鵟鷹", pitta: "八色鳥", pycnonotus: "白頭翁", zosterops: "綠繡眼", sparrow: "麻雀", spilopelia: "珠頸斑鳩", nycticorax: "夜鷺", accipiter: "鳳頭蒼鷹", petaurista: "白面鼯鼠", paguma: "白鼻心", manis: "穿山甲", muntiacus: "山羌", treefrog: "莫氏樹蛙", toad: "黑眶蟾蜍", gecko: "壁虎", beetle: "獨角仙", leopardgecko: "豹紋守宮", hermit: "寄居蟹", sugarglider: "蜜袋鼯" };
+  var list = document.getElementById("list");
+  Object.keys(window.PHOTOS).forEach(function (k) {
+    var d = window.PHOTOS[k];
+    var el = document.createElement("div");
+    el.className = "credit";
+    var img = document.createElement("img"); img.src = d.src; img.alt = names[k] || k; img.loading = "lazy";
+    var t = document.createElement("div");
+    var b = document.createElement("b"); b.textContent = names[k] || k;
+    var a = document.createElement("a"); a.href = d.page; a.target = "_blank"; a.rel = "noopener"; a.textContent = "原始頁面";
+    t.appendChild(b); t.appendChild(document.createElement("br"));
+    t.appendChild(document.createTextNode("攝影：" + d.by)); t.appendChild(document.createElement("br"));
+    t.appendChild(document.createTextNode("授權：" + d.lic + "　")); t.appendChild(a);
+    el.appendChild(img); el.appendChild(t);
+    list.appendChild(el);
+  });
+})();
+</script>
+</body>
+</html>
