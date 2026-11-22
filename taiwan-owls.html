@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>台灣貓頭鷹與保育｜貓頭鷹小學堂</title>
+<meta name="description" content="台灣有哪些貓頭鷹、法律怎麼保護牠們、牠們面臨哪些危險，以及小朋友可以怎麼幫忙。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Iansui&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.levels { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.level { border-radius: 16px; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; }
+.level b { font-family: var(--display); font-weight: 400; font-size: 1.5rem; }
+.level.l1 { background: var(--berry-soft); }
+.level.l2 { background: var(--moon-soft); }
+.level.l3 { background: var(--leaf-soft); }
+.chain { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.chain li { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 6px 12px; font-weight: 500; }
+.chain .arrow { background: none; border: 0; padding: 0; color: var(--berry); font-weight: 700; }
+@media (max-width: 640px) { .levels { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header class="site-head">
+  <nav class="nav" aria-label="網站導覽">
+    <a class="brand" href="index.html"><svg viewBox="0 0 28 30" aria-hidden="true"><path d="M4 6 L8 10 L20 10 L24 6 L24 22 C24 27 20 29 14 29 C8 29 4 27 4 22 Z" class="owl-body"/><circle cx="10" cy="15" r="4.5" class="owl-face"/><circle cx="18" cy="15" r="4.5" class="owl-face"/><circle cx="10" cy="15" r="2.4" class="owl-eye"/><circle cx="18" cy="15" r="2.4" class="owl-eye"/><circle cx="10" cy="15" r="1.2" class="owl-pupil"/><circle cx="18" cy="15" r="1.2" class="owl-pupil"/><path d="M12.5 19 L15.5 19 L14 22 Z" class="owl-beak"/></svg>貓頭鷹小學堂</a>
+    <ul>
+      <li><a href="index.html">貓頭鷹小百科</a></li>
+      <li><a href="taiwan-owls.html" aria-current="page">台灣貓頭鷹與保育</a></li>
+      <li><a href="where.html">哪裡看貓頭鷹</a></li>
+      <li><a href="worksheet.html">學習單</a></li>
+      <li><a href="nocturnal.html">夜行性動物</a></li>
+      <li><a href="birds.html">台灣鳥類</a></li>
+      <li><a href="pets.html">可以養嗎？</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <header class="hero" style="grid-template-columns:1fr">
+    <div class="hero-text">
+      <p class="eyebrow">台灣的貓頭鷹</p>
+      <h1>台灣的貓頭鷹，都是受保護的野生動物</h1>
+      <p class="lede">台灣記錄過十幾種貓頭鷹。牠們都受到《野生動物保育法》保護，其中<b>草鴞</b>是第 I 級「瀕臨絕種」，數量非常少。</p>
+    </div>
+  </header>
+
+  <section aria-labelledby="species">
+    <p class="eyebrow">認識牠們</p>
+    <h2 id="species">台灣常見或有代表性的貓頭鷹</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>種類</th><th>特色</th><th>住在哪裡</th></tr></thead>
+        <tbody>
+          <tr><td><b>領角鴞</b></td><td>最常見，叫聲是低低的「嗚—」</td><td>低海拔樹林、校園、公園</td></tr>
+          <tr><td><b>黃嘴角鴞</b></td><td>體型小，叫聲像「噓—噓—」</td><td>中低海拔山區</td></tr>
+          <tr><td><b>蘭嶼角鴞</b></td><td>只住在蘭嶼，是台灣特有亞種</td><td>蘭嶼</td></tr>
+          <tr><td><b>褐林鴞</b></td><td>體型大</td><td>中高海拔森林</td></tr>
+          <tr><td><b>黃魚鴞</b></td><td>會抓魚，數量很少</td><td>山區溪流旁</td></tr>
+          <tr><td><b>草鴞</b> <span class="tag red">瀕臨絕種</span></td><td>在地上築巢，非常稀有</td><td>草原、草生地</td></tr>
+          <tr><td><b>鵂鶹</b></td><td>台灣最小的貓頭鷹之一，白天也會活動</td><td>中海拔森林</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="law">
+    <p class="eyebrow">法律怎麼保護</p>
+    <h2 id="law">保育類分成三級</h2>
+    <div class="levels">
+      <div class="level l1"><b>第 I 級</b><span>瀕臨絕種，例如<b>草鴞</b></span></div>
+      <div class="level l2"><b>第 II 級</b><span>珍貴稀有</span></div>
+      <div class="level l3"><b>第 III 級</b><span>其他應予保育</span></div>
+    </div>
+    <p class="kid">不管是哪一級，都<b>不能捕捉、飼養、買賣</b>，違法會被處罰。</p>
+    <p class="note">草鴞第 I 級有官方資料確認。其他貓頭鷹大多屬於第 II 級，但每種目前的等級，請以林業及自然保育署公告的「陸域保育類野生動物名錄」最新版為準。</p>
+  </section>
+
+  <section aria-labelledby="danger">
+    <p class="eyebrow">牠們遇到的困難</p>
+    <h2 id="danger">貓頭鷹面臨的五個危險</h2>
+    <div class="grid-2">
+      <div class="card"><h3>1. 家不見了</h3><p>森林、草地被開發。草鴞喜歡的草原尤其越來越少。</p></div>
+      <div class="card"><h3>2. 吃到中毒的老鼠</h3><p>滅鼠藥會讓老鼠變慢，貓頭鷹更容易抓到牠，結果自己也中毒。</p></div>
+      <div class="card"><h3>3. 狗和人的打擾</h3><p>草鴞在地上築巢，很容易被遊蕩的狗或人打擾。</p></div>
+      <div class="card"><h3>4. 撞窗、車禍</h3><p>晚上低飛時，容易撞上玻璃或被車撞。</p></div>
+      <div class="card"><h3>5. 被抓去當寵物</h3><p>貓頭鷹很可愛，有人想偷偷養，這是違法的，也會害牠們生病。</p></div>
+    </div>
+    <div class="note-berry">
+      <p><b>老鼠藥為什麼會害到貓頭鷹？</b></p>
+      <ol class="chain" style="margin-top:8px">
+        <li>田裡放毒鼠藥</li><li class="arrow" aria-hidden="true">→</li>
+        <li>老鼠吃了變慢</li><li class="arrow" aria-hidden="true">→</li>
+        <li>貓頭鷹抓到牠吃掉</li><li class="arrow" aria-hidden="true">→</li>
+        <li>貓頭鷹也中毒</li>
+      </ol>
+      <p class="note" style="margin-top:8px">曾有草鴞幼鳥死前出現抽搐和嘔吐，官方高度懷疑是食物中毒，但目前還沒有確切證據。</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="action">
+    <p class="eyebrow">大人在做什麼</p>
+    <h2 id="action">保育行動</h2>
+    <ul class="plain">
+      <li>政府為草鴞訂定了<b>保育行動計畫</b>。不過官方評估，主要的威脅都還在，還需要加強。</li>
+      <li>有些地方推廣<b>友善農法</b>：少用滅鼠藥，在農田立「棲架」讓猛禽停，請牠們當「捕鼠高手」。</li>
+      <li><b>台灣猛禽研究會</b>等團體會做調查、救傷和教育推廣。</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="help">
+    <p class="eyebrow">換你出場</p>
+    <h2 id="help">小朋友可以怎麼幫忙？</h2>
+    <ul class="checklist">
+      <li><label><input type="checkbox"><span>看到貓頭鷹<b>不要抓、不要餵</b>，遠遠觀察就好。</span></label></li>
+      <li><label><input type="checkbox"><span>撿到受傷或掉下來的貓頭鷹，<b>不要自己養</b>，請大人打 <b>1999</b> 或聯絡各縣市動物保護單位。</span></label></li>
+      <li><label><input type="checkbox"><span>夜觀時<b>小聲說話</b>，不用閃光燈，也不用手電筒一直照牠。</span></label></li>
+      <li><label><input type="checkbox"><span>跟家人分享「<b>不用毒鼠藥</b>」的觀念。</span></label></li>
+      <li><label><input type="checkbox"><span>家裡的大窗戶<b>貼貼紙</b>，減少鳥類撞窗。</span></label></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="more">
+    <p class="eyebrow">繼續探險</p>
+    <h2 id="more">下一站去哪裡？</h2>
+    <div class="next">
+      <a class="star" href="where.html"><b>哪裡看貓頭鷹</b><span>動物園、夜觀活動、校園。</span></a>
+      <a href="pets.html"><b>可以養貓頭鷹嗎？</b><span>為什麼不行？還有特寵小知識。</span></a>
+      <a href="worksheet.html"><b>學習單</b><span>第三關就是保育小尖兵！</span></a>
+    </div>
+  </section>
+
+  <footer class="site-foot">
+    <p>給大人：內容整理於 2026 年 11 月。保育等級與罰則會修訂，請以農業部林業及自然保育署公告為準。</p>
+    <div class="sources">
+      <p><b>資料來源</b></p>
+      <ul>
+        <li><a href="https://www.forest.gov.tw/MagazineFile/5799">林業及自然保育署 台灣林業雜誌（草鴞）</a></li>
+        <li><a href="https://conservation.forest.gov.tw/File.aspx?fno=84454">林業及自然保育署 保育資料（草鴞行動計畫相關）</a></li>
+        <li><a href="https://conservation.forest.gov.tw/File.aspx?fno=83068">林業及自然保育署 保育資料（猛禽保育現況）</a></li>
+        <li><a href="https://conservation.forest.gov.tw/File.aspx?fno=70814">林業及自然保育署 保育類名錄相關資料</a></li>
+        <li><a href="https://www.moa.gov.tw/redirect_files.php?id=25681">農業部 保育類野生動物名錄相關公告</a></li>
+        <li><a href="https://news.pts.org.tw/article/752845">公視新聞：滅鼠藥與草鴞</a></li>
+        <li><a href="https://www.thenewslens.com/article/252071">關鍵評論網：草鴞保育</a></li>
+      </ul>
+    </div>
+  </footer>
+</main>
+</body>
+</html>
